@@ -84,8 +84,9 @@ public class ResourceUtil {
     }
 
     private static Image getImage(String name) {
+        System.out.println(name);
         return Toolkit.getDefaultToolkit().getImage(
-                ResourceUtil.class.getResource("/" + name));
+                ResourceUtil.class.getResource("/"+name));
     }
 
     private static Icon getIcon(String fileName) {
